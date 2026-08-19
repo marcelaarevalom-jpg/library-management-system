@@ -51,3 +51,24 @@ Esta clase centraliza la funcionalidad. Debes implementar:
 *   No es necesario un sistema de login/autenticación.
 
 ¡Mucho éxito con tu implementación!
+
+
+## Funcionalidades Implementadas
+
+- **Conexión a base de datos**: `classes/Database.php` implementa la conexión PDO a MySQL con manejo de errores (try/catch).
+- **Clases de modelo**: `Libro.php`, `Usuario.php` y `Prestamo.php`, con constructores y getters/setters completos.
+- **CRUD de Libros**: agregar, editar, eliminar y listar libros.
+- **CRUD de Usuarios**: agregar, editar, eliminar y listar usuarios.
+- **Gestión de Préstamos**: `prestarLibro()` crea el registro y descuenta la cantidad disponible; `devolverLibro()` marca el préstamo como devuelto y repone la cantidad.
+- **Interfaz (`index.php`)**: enrutamiento por parámetro `?action=`, formularios de alta, listados dinámicos, y acciones de préstamo/devolución/edición/eliminación.
+
+## Capturas de Pantalla
+
+### Gestión de Libros
+![Libros](capturas/libros.png)
+
+### Gestión de Usuarios
+![Usuarios](capturas/usuarios.png)
+
+### Gestión de Préstamos
+![Préstamos](capturas/prestamos.png)
